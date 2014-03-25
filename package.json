@@ -1,0 +1,47 @@
+{
+    "name": "evo-tubes",
+    "description": "Evo Cloud Testing Support",
+    "version": "0.0.1",
+    "author": "Yisui Hu <easeway@gmail.com>",
+    "scripts": {
+        "test": "mocha -R spec test/*-test.js",
+        "cov": "mocha -r blanket -R html-cov test/*-unit-test.js >_coverage.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/evo-cloud/tubes"
+    },
+    "main": "./index.js",
+    "dependencies": {
+        "evo-elements": "git://github.com/evo-cloud/elements",
+        "evo-neuron":   "git://github.com/evo-cloud/neuron",
+        "evo-idioms":   "git://github.com/evo-cloud/idioms",
+        "js-class": "0.0.2",
+        "js-flow": "git://github.com/easeway/js-flow",
+        "underscore": "1.5.1",
+        "remove": "0.1.5",
+        "mkdirp": "0.3.5",
+        "glob": "3.2.9"
+    },
+    "devDependencies": {
+        "mocha": "1.12.0",
+        "sandboxed-module": "0.2.1",
+        "blanket": "1.1.6"
+    },
+    "engines": {
+        "node": ">=0.10",
+        "npm": "1"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/evo-cloud/tubes/raw/master/LICENSE"
+        }
+    ],
+    "config": {
+        "blanket": {
+            "onlyCwd": true,
+            "pattern": "//^((?!node_modules).)*/lib/.+$/"
+        }
+    }
+}
