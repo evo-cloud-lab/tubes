@@ -4,5 +4,6 @@ module.exports = {
     Sandbox:      require('./lib/Sandbox'),
     CloudService: require('./lib/CloudService'),
     NeuronFactory:require('./lib/NeuronFactory'),
-    Connector:    require('./lib/Connector')
+    Connector:    require('./lib/Connector'),
+    States:       require('./lib/States')
 };
